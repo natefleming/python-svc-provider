@@ -1,0 +1,40 @@
+[project]
+name = "datatwins-azure"
+version = "0.0.1"
+description = "This library provides the core interfaces for datatwins azure functionality"
+authors = [
+    {name = "Nate Fleming", email="nate_fleming@mckinsey.com"},
+]
+license = {file = "LICENSE.txt"}
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["packaging", "dependency", "infer", "pyproject.toml"]
+classifiers = [
+    "Topic :: Software Development"
+]
+dependencies = [
+]
+
+[project.optional-dependencies]
+dev = [
+]
+
+[options]
+zip_safe = true
+include_package_data = true
+
+[options.package_data]
+mck = "*.yaml"
+
+[project.urls]
+repository = "https://github.com/"
+
+[project.scripts]
+poetry = "infer_pyproject.cli:main"
+
+[build-system]
+requires = [
+    "setuptools >= 35.0.2",
+]
+build-backend = "setuptools.build_meta"
+
